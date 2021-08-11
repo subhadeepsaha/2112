@@ -43,6 +43,7 @@ view: users {
     sql: ${TABLE}.email ;;
   }
 
+
   dimension: first_name {
     type: string
     sql: ${TABLE}.first_name ;;
@@ -57,6 +58,12 @@ view: users {
     type: string
     sql: ${TABLE}.last_name ;;
   }
+
+  dimension: full_name {
+    type: string
+    sql: concat(${first_name},' ',${last_name}) ;;
+  }
+
 
   dimension: state {
     type: string
