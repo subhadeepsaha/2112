@@ -16,6 +16,8 @@ view: orders {
       time_of_day,
       hour,
       hour_of_day,
+      hour12,
+      hour2,
       minute,
       second,
       millisecond,
@@ -35,7 +37,9 @@ view: orders {
       year,
       fiscal_year,
       day_of_year,
-      week_of_year
+      week_of_year,
+      yesno,
+
     ]
     sql: ${TABLE}.created_at ;;
   }
