@@ -13,11 +13,29 @@ view: orders {
     timeframes: [
       raw,
       time,
+      time_of_day,
+      hour,
+      hour_of_day,
+      minute,
+      second,
+      millisecond,
+      microsecond,
       date,
       week,
+      day_of_week,
+      day_of_week_index,
       month,
+      month_num,
+      month_name,
+      day_of_month,
       quarter,
-      year
+      fiscal_quarter,
+      quarter_of_year,
+      fiscal_quarter_of_year,
+      year,
+      fiscal_year,
+      day_of_year,
+      week_of_year
     ]
     sql: ${TABLE}.created_at ;;
   }
