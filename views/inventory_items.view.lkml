@@ -57,6 +57,12 @@ dimension: tax_amount {
     sql: ${TABLE}.sold_at ;;
   }
 
+  measure: average_cost {
+    type: average
+    value_format: "0.00"
+    sql: ${TABLE}.cost ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [id, products.id, products.item_name, order_items.count]
