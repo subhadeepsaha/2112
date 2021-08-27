@@ -22,6 +22,7 @@ view: products {
   dimension: department {
     type: string
     sql: ${TABLE}.department ;;
+    html:   <font color="green">{{ value }}</font>;;
   }
 
   dimension: item_name {
