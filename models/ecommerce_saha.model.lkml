@@ -97,6 +97,7 @@ explore: inventory_items {
 }
 
 explore: order_items {
+  persist_for: "0 seconds"
   join: orders {
     type: left_outer
     sql_on: ${order_items.order_id} = ${orders.id} ;;
