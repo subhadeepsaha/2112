@@ -78,4 +78,7 @@ view: orders {
       ten_million_orders.count
     ]
   }
+  measure: date_name {
+    sql:  (DATE(CONVERT_TZ(`orders`.`created_at`,'UTC','America/Los_Angeles'))) ;;
+  }
 }
