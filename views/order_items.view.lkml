@@ -81,4 +81,8 @@ measure: total_sale_price{
     type: count
     drill_fields: [id, orders.id, inventory_items.id]
   }
+  measure: doingaa {
+    type: sum
+    sql: ${id} + ${inventory_item_id};;
+  }
 }
